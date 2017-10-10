@@ -1,0 +1,225 @@
+<h1>Html for Lists</h1>
+
+Start tags for
+
+
+<h2>An Ordered HTML List</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 	
+
+<h2>Unordered List with Circle Bullets</h2>
+
+<ul style="list-style-type:circle">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+ 
+-
+<h2>a description list</h2>
+
+<h2>a list item</h2>
+<p>type="1"	The list items will be numbered with numbers (default)
+<p>type="A"	The list items will be numbered with uppercase letters
+<p>type="a"	The list items will be numbered with lowercase letters
+<p>type="I"	The list items will be numbered with uppercase roman numbers
+<p>type="i"	The list items will be numbered with lowercase roman numbers
+<p>
+
+
+<h2>a description term</h2>
+
+<p>The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term: 
+<p>
+
+<h2>A Description List</h2>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<h2>a description data</h2>??
+
+
+
+
+<h1>Css for Lists</h1>
+
+<h2>Make bullet a square</h2>
+ul.b {
+    list-style-type: square;
+}
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Cokca Cola</li>
+</ul>
+
+<h2>Make bullet an image named "my-bullet.png"</h2>
+<style>
+ul {
+    list-style-image: url('sqpurple.gif');
+}
+</style>
+<body>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+<h2>Make bullet an uppercase roman number</h2>
+<h2>Set bullet position to be inside the list item's text flow</h2>
+<h2>Set bullet position to be outside the list item's text flow</h2>
+<style>
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style-type: square;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
+</style>
+</head>
+<body>
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+</body>
+
+
+
+<h2>Defining an HTML Table</h2>
+<h3>An HTML table is defined with the <table> tag.
+<p>
+Each table row is defined with the <tr> tag. A table header is defined with the <.th> tag.</tr>  By default, table headings are bold and centered. A table data/cell is defined with the <.td> tag.</h3>
+</p>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+</style>
+
+<h2>HTML Table - Adding a Border</h2>
+<h3>If you do not specify a border for the table, it will be displayed without borders.
+<p>
+A border is set using the CSS border property:</h3>
+<p>table, th, td {
+    border: 1px solid black;
+}<p>
+
+<h2>HTML Table - Cells that Span Many Columns</h2>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two columns:</h2>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+</style>
+
+<h2>Css for Tables</h2><style>
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+</style>
+</head>
+<body>
+
+<h2>The border-style Property</h2>
+<p>This property specifies what kind of border to display:</p>
+
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+
+</body>
